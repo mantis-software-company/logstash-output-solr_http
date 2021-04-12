@@ -1,0 +1,13 @@
+Using JAVA_HOME defined java: /home/gitpod/.sdkman/candidates/java/current
+WARNING, using JAVA_HOME while Logstash distribution comes with a bundled JDK
+warning: ignoring JAVA_TOOL_OPTIONS=-Xmx1879m
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: Could not find logstash.yml which is typically located in $LS_HOME/config or /etc/logstash. You can specify the path using --path.settings. Continuing using the defaults
+Could not find log4j2 configuration at path /usr/share/logstash/config/log4j2.properties. Using default config which logs errors to the console
+[INFO ] 2021-04-12 06:15:23.860 [main] runner - Starting Logstash {"logstash.version"=>"7.12.0", "jruby.version"=>"jruby 9.2.13.0 (2.5.7) 2020-08-03 9a89c94bcc OpenJDK 64-Bit Server VM 11.0.10+9-LTS on 11.0.10+9-LTS +indy +jit [linux-x86_64]"}
+[FATAL] 2021-04-12 06:15:23.883 [main] runner - An unexpected error occurred! {:error=>#<ArgumentError: Path "/usr/share/logstash/data" must be a writable directory. It is not writable.>, :backtrace=>["/usr/share/logstash/logstash-core/lib/logstash/settings.rb:530:in `validate'", "/usr/share/logstash/logstash-core/lib/logstash/settings.rb:290:in `validate_value'", "/usr/share/logstash/logstash-core/lib/logstash/settings.rb:201:in `block in validate_all'", "org/jruby/RubyHash.java:1415:in `each'", "/usr/share/logstash/logstash-core/lib/logstash/settings.rb:200:in `validate_all'", "/usr/share/logstash/logstash-core/lib/logstash/runner.rb:326:in `execute'", "/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/clamp-0.6.5/lib/clamp/command.rb:67:in `run'", "/usr/share/logstash/logstash-core/lib/logstash/runner.rb:274:in `run'", "/usr/share/logstash/vendor/bundle/jruby/2.5.0/gems/clamp-0.6.5/lib/clamp/command.rb:132:in `run'", "/usr/share/logstash/lib/bootstrap/environment.rb:88:in `<main>'"]}
+[FATAL] 2021-04-12 06:15:23.887 [main] Logstash - Logstash stopped processing because of an error: (SystemExit) exit
+org.jruby.exceptions.SystemExit: (SystemExit) exit
+	at org.jruby.RubyKernel.exit(org/jruby/RubyKernel.java:747) ~[jruby-complete-9.2.13.0.jar:?]
+	at org.jruby.RubyKernel.exit(org/jruby/RubyKernel.java:710) ~[jruby-complete-9.2.13.0.jar:?]
+	at usr.share.logstash.lib.bootstrap.environment.<main>(/usr/share/logstash/lib/bootstrap/environment.rb:89) ~[?:?]
